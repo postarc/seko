@@ -172,7 +172,6 @@ function setup_node() {
   important_information  
 }
 
-function 
 
 ##### Main #####
 #clear
