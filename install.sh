@@ -144,6 +144,7 @@ fi
 function prepare_system() {
 echo -e "Installing ${GREEN}$COIN_NAME${NC} Masternode."
 sudo apt-get update >/dev/null 2>&1
+#sudo apt install virtualenv python 
 #clear
 }
 
@@ -171,6 +172,7 @@ function setup_node() {
   important_information  
 }
 
+function 
 
 ##### Main #####
 #clear
