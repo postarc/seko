@@ -142,7 +142,7 @@ fi
 function prepare_system() {
 echo -e "Installing ${GREEN}$COIN_NAME${NC} Masternode."
 sudo apt-get update >/dev/null 2>&1
-#sudo apt install virtualenv python 
+sudo apt install miniupnpc
 #clear
 }
 
