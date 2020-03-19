@@ -40,11 +40,9 @@ function download_node() {
 if [ ! -f "/usr/local/bin/ifpd" ]; then
   echo -e "Download $COIN_NAME"
   cd
-  wget -q $COIN_TGZ
-  unzip $COIN_ZIP
-  rm $COIN_ZIP
+  wget https://github.com/sekopaycoin/sekosetup/releases/download/v2.3.0/seko-cli
+  wget https://github.com/sekopaycoin/sekosetup/releases/download/v2.3.0/sekod
   chmod +x $COIN_DAEMON $COIN_CLI
-  sudo chown -R root:users /usr/local/bin/
   sudo bash -c "cp $COIN_CLI /usr/local/bin/"
   sudo bash -c "cp $COIN_DAEMON /usr/local/bin/"
   rm $COIN_CLI
