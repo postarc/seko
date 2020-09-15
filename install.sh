@@ -37,7 +37,7 @@ done
 echo -e "${GREEN}Free MN port address:$PORT${NC}"
 
 function download_node() {
-if [ ! -f "/usr/local/bin/ifpd" ]; then
+if [ ! -f "/usr/local/bin/$COIN_DAEMON" ]; then
   echo -e "Download $COIN_NAME"
   cd
   wget https://github.com/sekopaycoin/sekosetup/releases/download/v2.3.0/seko-cli
